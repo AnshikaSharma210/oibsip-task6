@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* landing */
+.containerland{
+    display: flex;
+    flex-direction: row;
+    background: url(bgimg2.png) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 12% 5%;
+    width: 100%;
+  }
+  .container p {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container p span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  .byline{
+    font-size: 1.5rem;
+  }
+  .left, .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .msd1{
+    border: 1px solid rgb(53, 47, 63);
+    border-radius: 50%;
+    background-color: rgb(166, 166, 212);
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+/* about */
+.container2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(199, 199, 199);
+    padding: 3% 5%;
+    color: black;
+}
+.abthead{
+    font-size: 2.4rem;
+}
+.picsrow1{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-top: 8%;
+}
+.textparas{
+    width: 60%;
+    padding: 5%;
+    line-height: 1.4rem;
+    text-align: justify;
+}
+h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.picsrow2{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+} 
+.row1{
+    padding-bottom: 5%;
+} 
+.row2{
+    padding-top: 5%;
+}
+/* Third Div */
+.container3{
+    padding: 5% 0;
+    background: url(bgimg2.png) no-repeat center center fixed;
+    background-size: cover;
+}
+.left2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slideshow-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slideshow-container img{
+    border-radius: 12px;
+    width: 90%;
+}
+.right2{
+    background: rgb(255,255,255, 0.16);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.9rem;
+}
+.containergall{
+    
+    display: flex;
+    flex-direction: row;
+    background: url(bgimg2.png) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 12% 5%;
+    width: 100%;
+}
+/* foot */
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(199, 199, 199);
+    padding: 2% 5%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+/* media query */
+@media only screen and (max-width:1024px) {
+    .picsrow1, .picsrow2{
+        margin-top: 15%;
+    }
+    .textparas{
+        font-size: 85%;
+    }
+    .right2{
+        padding: 2%;
+        font-size: 80%;
+    }
+    .containergall{
+        flex-direction: column;
+    }
+    .left2, .right2{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container p{
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .msd1{
+        width: 75%;
+    }
+    .containerland{
+        flex-direction: column-reverse;
+    }
+    .left, .right{
+        width: 100%;
+        margin: 2% 0;
+    }
+    .container2{
+        flex-direction: column;
+    }
+    .para1, .para2{
+        font-weight: bold;
+        font-size: 120%;
+    }
+    .picsrow1, .picsrow2{
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+    .row1{
+        display: none;
+    }
+    .row2{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .textparas{
+        font-size: 75%;
+        width: 100%;
+    }
+    .left2{
+        padding-bottom: 10%;
+    }
+    .right2{
+        font-size: 85%;
+    }
+    ul{
+        overflow-x: hidden;
+        word-wrap: break-word;
+        padding: 0 2%;
+    }
+    footer{
+        font-size: 70%;
+    }
+}
